@@ -1,0 +1,57 @@
+<!doctype html><html lang="de"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="LENRONIX Autoaufbereitung – professionelle Fahrzeugpflege und Detailing.">
+  <meta property="og:title" content="Kontakt – LENRONIX">
+  <meta property="og:description" content="Innen frisch, außen brillant. Jetzt Termin online buchen.">
+  <meta property="og:image" content="images/og.jpg">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/script.js"></script>
+<title>Kontakt – LENRONIX</title></head><body>
+
+  <header class="container header">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="LENRONIX Autoaufbereitung Logo"></a>
+    <nav class="nav">
+      <button id="menuBtn" aria-label="Menü">☰</button>
+      <ul id="menu">
+        <li class=""><a href="index.html">Home</a></li><li class=""><a href="preisliste.html">Preisliste</a></li><li class=""><a href="ueber-uns.html">Über uns</a></li><li class="active"><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <a class="btn btn-light" href="kontakt.html#buchung">Termin buchen</a>
+    </nav>
+  </header>
+<main class="container">
+  <h1 class="section-title">Kontakt</h1>
+  <div class="grid">
+    <div class="card"><h3>Adresse (Platzhalter)</h3><p>Beispielstraße 12<br>12345 Musterstadt</p><p>Telefon: 01234 / 567890<br>E‑Mail: info@lenronix.de</p></div>
+    <div class="card"><h3>Maps</h3><iframe src="https://www.google.com/maps?q=Beispielstraße%2012%2C%2012345%20Musterstadt&output=embed" width="100%" height="260" style="border:0" loading="lazy"></iframe></div>
+  </div>
+  <section id="buchung" class="section-title">Online‑Terminbuchung</section>
+  <div class="card">
+    <p>Falls der Kalender nicht lädt, <a id="calLink" href="https://calendly.com/DEIN-NAME/lenronix-termin" target="_blank" rel="noopener">hier klicken</a>.</p>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/DEIN-NAME/lenronix-termin?hide_gdpr_banner=1" style="min-width:320px;height:780px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </div>
+  <section class="section-title">Kontaktformular</section>
+  <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="card">
+    <input type="hidden" name="form-name" value="kontakt">
+    <p class="hidden"><label>Nicht ausfüllen: <input name="bot-field" /></label></p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <label>Dein Name<input name="name" required></label>
+      <label>E‑Mail<input type="email" name="email" required></label>
+      <label>Nachricht<textarea name="message" rows="4" placeholder="Fahrzeug, Leistungen, Terminwunsch…"></textarea></label>
+    </div>
+    <button class="btn btn-outline" type="submit">Nachricht senden</button>
+  </form>
+</main>
+  <footer class="container footer">
+    <div>© <span id="y"></span> LENRONIX GbR</div>
+    <nav class="footer-nav">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+</body></html>
