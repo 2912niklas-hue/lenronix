@@ -1,62 +1,117 @@
-<!doctype html><html lang="de"><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0c">
-  <meta name="description" content="LENRONIX Autoaufbereitung – professionelle Fahrzeugpflege und Detailing.">
-  <meta property="og:title" content="Preisliste – LENRONIX">
-  <meta property="og:description" content="Innen frisch, außen brillant. Jetzt Termin online buchen.">
-  <meta property="og:image" content="images/og.jpg">
-  <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script defer src="assets/script.js"></script>
-<title>Preisliste – LENRONIX</title></head><body>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preisliste – LENRONIX</title>
 
+  <!-- Basis-Meta (optional) -->
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Preise und Pakete – LENRONIX Autoaufbereitung">
+  <link rel="icon" href="images/favicon.png">
+
+  <!-- Styles & Tabs-Script -->
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
   <header class="container header">
-    <a class="brand" href="index.html"><img src="images/logo.png" alt="LENRONIX Autoaufbereitung Logo"></a>
+    <a class="brand" href="index.html">
+      <!-- passe den Pfad/Dateityp an falls nötig -->
+      <img src="images/logo.png" alt="LENRONIX Autoaufbereitung Logo">
+    </a>
     <nav class="nav">
       <button id="menuBtn" aria-label="Menü">☰</button>
       <ul id="menu">
-        <li class=""><a href="index.html">Home</a></li><li class="active"><a href="preisliste.html">Preisliste</a></li><li class=""><a href="ueber-uns.html">Über uns</a></li><li class=""><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="index.html">Home</a></li>
+        <!-- Leistungen-Link kann weg, wenn du ihn nicht nutzt -->
+        <!-- <li><a href="leistungen.html">Leistungen</a></li> -->
+        <li class="active"><a href="preisliste.html">Preisliste</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
       <a class="btn btn-light" href="kontakt.html#buchung">Termin buchen</a>
     </nav>
   </header>
-<main class="container" data-tabs>
-  <h1 class="section-title">Preisliste</h1>
-  <div class="tabs" role="tablist">
-    <button class="active" data-tab="innen">Innenaufbereitung</button>
-    <button data-tab="aussen">Außenaufbereitung</button>
-    <button data-tab="komplett">Komplettpaket</button>
-  </div>
 
-  <section data-tab-panel="innen">
-    <table class="table"><thead><tr><th>Fahrzeugtyp</th><th>Classic</th><th>Premium</th></tr></thead><tbody>
-      <tr><td>Kleinwagen</td><td>75 €</td><td>110 €</td></tr>
-      <tr><td>Mittelklasse</td><td>95 €</td><td>140 €</td></tr>
-      <tr><td>SUV/Kombi</td><td>125 €</td><td>170 €</td></tr>
-      <tr><td>Transporter</td><td>150 €</td><td>200 €</td></tr>
-    </tbody></table>
-  </section>
+  <!-- Hauptbereich: zentrierte Preisliste -->
+  <main class="container" data-tabs>
+    <h1 class="section-title center-title">Preisliste</h1>
 
-  <section data-tab-panel="aussen" style="display:none">
-    <table class="table"><thead><tr><th>Fahrzeugtyp</th><th>Classic</th><th>Premium</th></tr></thead><tbody>
-      <tr><td>Kleinwagen</td><td>55 €</td><td>70 €</td></tr>
-      <tr><td>Mittelklasse</td><td>65 €</td><td>60 €</td></tr>
-      <tr><td>SUV/Kombi</td><td>55 €</td><td>80 €</td></tr>
-      <tr><td>Transporter</td><td>65 €</td><td>90 €</td></tr>
-    </tbody></table>
-  </section>
+    <!-- Zentrierter Wrapper -->
+    <div class="preisliste-center">
 
-  <section data-tab-panel="komplett" style="display:none">
-    <table class="table"><thead><tr><th>Fahrzeugtyp</th><th>Classic</th><th>Premium</th></tr></thead><tbody>
-      <tr><td>Kleinwagen</td><td>100 €</td><td>150 €</td></tr>
-      <tr><td>Mittelklasse</td><td>150 €</td><td>190 €</td></tr>
-      <tr><td>SUV</td><td>160 €</td><td>230 €</td></tr>
-      <tr><td>Transporter</td><td>200 €</td><td>280 €</td></tr>
-    </tbody></table>
-  </section>
+      <!-- Tabs -->
+      <div class="tabs" role="tablist">
+        <button class="active" data-tab="innen">Innenaufbereitung</button>
+        <button data-tab="aussen">Außenaufbereitung</button>
+        <button data-tab="komplett">Komplettpaket</button>
+      </div>
 
-</main>
+      <!-- Panel: Innen -->
+      <section data-tab-panel="innen">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Fahrzeugtyp</th>
+              <th>Classic</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Kleinwagen</td><td>75 €</td><td>110 €</td></tr>
+            <tr><td>Mittelklasse</td><td>95 €</td><td>140 €</td></tr>
+            <tr><td>SUV/Kombi</td><td>125 €</td><td>170 €</td></tr>
+            <tr><td>Transporter</td><td>150 €</td><td>200 €</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Panel: Außen -->
+      <section data-tab-panel="aussen" style="display:none">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Fahrzeugtyp</th>
+              <th>Classic</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Kleinwagen</td><td>55 €</td><td>70 €</td></tr>
+            <tr><td>Mittelklasse</td><td>65 €</td><td>60 €</td></tr>
+            <tr><td>SUV/Kombi</td><td>55 €</td><td>80 €</td></tr>
+            <tr><td>Transporter</td><td>65 €</td><td>90 €</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Panel: Komplett -->
+      <section data-tab-panel="komplett" style="display:none">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Fahrzeugtyp</th>
+              <th>Classic</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Kleinwagen</td><td>100 €</td><td>150 €</td></tr>
+            <tr><td>Mittelklasse</td><td>150 €</td><td>190 €</td></tr>
+            <tr><td>SUV</td><td>160 €</td><td>230 €</td></tr>
+            <tr><td>Transporter</td><td>200 €</td><td>280 €</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p class="note">Hinweis: Preise nach Bedarf anpassen. Änderungen vorbehalten.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
   <footer class="container footer">
     <div>© <span id="y"></span> LENRONIX GbR</div>
     <nav class="footer-nav">
@@ -65,5 +120,5 @@
     </nav>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-
-</body></html>
+</body>
+</html>
