@@ -86,3 +86,25 @@ body::before{content:"";position:fixed;inset:0;background-image:url('../images/l
     height: 260px; /* Höhe kannst du größer machen, z. B. 400px */
     border: 0;
 }
+
+/* Preisliste mittig ausrichten */
+.preisliste-center{
+  max-width: 900px;   /* gewünschte Breite der Inhaltsspalte */
+  margin: 0 auto;     /* zentriert */
+}
+
+/* Tabs zentrieren */
+.preisliste-center .tabs{
+  justify-content: center;
+}
+
+/* Tabelle auf Wrapper-Breite begrenzen und zentrieren */
+.preisliste-center .table{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Optional: Überschrift mittig NUR auf der Preisliste */
+.center-title{
+  text-align: center;
+}
