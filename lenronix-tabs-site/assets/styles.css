@@ -108,3 +108,32 @@ body::before{content:"";position:fixed;inset:0;background-image:url('../images/l
 .center-title{
   text-align: center;
 }
+
+/* Ein Block mit drei Bereichen */
+.usp-block{
+  display: grid;
+  gap: 0;                 /* keine Lücke innerhalb des Blocks */
+}
+
+/* Mobil: untereinander mit Trennlinie */
+.usp-block .usp-item{
+  padding: 1.25rem 1.5rem;
+}
+.usp-block .usp-item + .usp-item{
+  border-top: 1px solid var(--border);
+}
+
+/* Ab ~900px: drei Spalten in EINER Card, vertikale Trennlinien */
+@media (min-width: 900px){
+  .usp-block{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .usp-block .usp-item{
+    padding: 1.5rem 1.75rem;
+    border-top: 0;
+  }
+  .usp-block .usp-item + .usp-item{
+    border-left: 1px solid var(--border);
+  }
+}
+
